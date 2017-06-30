@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Bootstrap - komponenty JS</title>
+
+		<!-- Bootstrap CSS -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<link rel="stylesheet" href="style.css">
+		
+		<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script> 
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>-->
+	</head>
+	<body>
+		
+		<!--NAV-->
+		<nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Nawigacja</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">Boot-JS test</a>
+				</div>
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li><a href="#">Ene</a></li>
+						<li><a href="#">Due</a></li>
+						<li><a href="#">Like</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		
+		<!--KARUZELA-->
+		<div class="container">
+  			<div id="myCarousel" class="carousel slide" data-ride="carousel">
+		    	
+		  		<ol class="carousel-indicators">
+		    		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		      		<li data-target="#myCarousel" data-slide-to="1"></li>
+		      		<li data-target="#myCarousel" data-slide-to="2"></li>
+		      		<li data-target="#myCarousel" data-slide-to="3"></li>
+		      		<li data-target="#myCarousel" data-slide-to="4"></li>
+		    	</ol>
+		
+				<div class="carousel-inner" role="listbox">
+				    <div class="item active example-1">
+				    </div>
+				    <div class="item example-2">
+				    </div>
+				    <div class="item example-3">
+				    </div>
+				    <div class="item example-4">
+					</div>
+					<div class="item example-5">
+					</div>
+				</div>
+				
+				<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				<span class="sr-only">Poprzedni</span>
+				</a>
+				<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					<span class="sr-only">Następny</span>
+				</a>
+			</div>
+		</div>
+		
+		<!--KARTY-->
+		<div class="container">
+			<ul class="nav nav-tabs">
+	  			<li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+	  			<li><a data-toggle="tab" href="#menu1">Praca</a></li>
+	  			<li><a data-toggle="tab" href="#menu2">Hobby</a></li>
+	  			<li><a data-toggle="tab" href="#menu3">Pro Publico</a></li>
+			</ul>
+	
+			<div class="tab-content">
+				<div id="home" class="tab-pane fade in active">
+				    <h3>HOME</h3>
+				    <p>Dom jest tam, gdzie masz hasło do wi-fi.</p>
+			  	</div>
+			  	<div id="menu1" class="tab-pane fade">
+				    <h3>Praca</h3>
+				    <p>Jeśli praca jest hobby, to wcale nie jest dobrze. Ale jeśli już tak jest, to przynajmniej kup sobie psa. Przynajmniej wyjdziesz z domu.</p>
+			  	</div>
+			  	<div id="menu2" class="tab-pane fade">
+				    <h3>Hobby</h3>
+				    <p>Jeśli twoim hobby jest praca, to postaraj się przynajmniej pracować w balonie 1500 m nad ziemią albo w batyskafie na dnie morza. <br>Albo nie wiem co? Koduj czy coś?</p>
+			  	</div>
+			  	<div id="menu3" class="tab-pane fade">
+				    <h3>Pro Publico</h3>
+				    <p>To ta część, którą bez wstydu możesz sobie wrzućić do portfolio. Że karmisz kury w schronisku się pochwal albo że przykuwasz się do jedynej lipy na osiedlu, żeby ktoś jej nocą nie wyciął.</p>
+			  	</div>
+			</div>
+			
+			<!--MODAL-->
+			<button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#exampleModal">
+	  			Zobacz co tu się chowa
+			</button>
+	
+			<div id="exampleModal" class="modal fade" role="dialog">
+				 <div class="modal-dialog">
+	     			<div class="modal-content">
+	    		    	<div class="modal-header">
+	         				<h4>Informacyjnie</h4>
+	       				</div>
+	       				<div class="modal-body">
+	        			<p>Strona ta jest ćwiczeniem z wykorzystaniem elementów JS w Bootstrapie. Takie klocki, z których można coś zgrabnego złożyć. Niby proste na pierwszy rzut oka ale daje wielkie możliwości personalizacji każdego z modułów. To przyjemność ogarniać to dzień po dniu.</p>
+	       				</div>
+	       				<div class="modal-footer">
+	        				<p>Czeladnik Marek</p>
+	         				<button type="button" class="btn btn-primary" data-dismiss="modal">Możesz kliknąć</button>
+	       				</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script> 
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	</body>
+</html>
